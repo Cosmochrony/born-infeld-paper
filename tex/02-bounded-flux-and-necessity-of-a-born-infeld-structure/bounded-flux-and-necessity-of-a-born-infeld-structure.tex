@@ -1,80 +1,82 @@
-\section{Bounded flux and effective action}
-  \label{sec:bounded-flux-and-necessity-of-a-born--infeld-structure}
+\section{Bounded relaxation and effective action}
+  \label{sec:bounded-relaxation-and-effective-action}
 
-  We consider effective continuum descriptions arising from relational or operator-based
-  systems whose microscopic dynamics admits a finite maximal propagation or relaxation
-  speed.
-  Such a bound is a minimal physical requirement for causal consistency, ensuring that
-  no influence, signal, or constraint can propagate arbitrarily fast in the effective
-  description.
+  We consider effective continuum descriptions arising from relational systems whose
+  microscopic dynamics admits a finite maximal propagation or relaxation flux.
+  Such a bound is a minimal physical requirement for causal consistency: no influence,
+  constraint, or excitation can propagate arbitrarily fast in the effective theory.
 
-  Let $\phi$ denote a generic effective field encoding the coarse-grained degrees of
-  freedom of the relational system.
-  We assume that, in regimes where a continuum description is meaningful, the effective
-  dynamics can be represented by a local action functional of the form
+  In a continuum regime, the dynamics of slowly varying configurations can be encoded
+  in a local action functional
   \begin{equation}
-    S = \int \mathcal{L}(\partial_\mu \phi)\, d^n x ,
+    S = \int d^4x\,\mathcal{L},
   \end{equation}
-  where the Lagrangian density depends only on first derivatives of $\phi$.
-  No background geometry is assumed at this stage; spacetime notions are introduced only
-  as effective descriptive tools.
+  where $\mathcal{L}$ depends on the effective fields and their first derivatives.
+  From the perspective of field theory, the central question is therefore the following:
+  which local Lagrangian densities are compatible with bounded propagation?
 
-  A purely quadratic functional,
+  A purely quadratic action, such as the Maxwell form
   \begin{equation}
-    \mathcal{L}_{\mathrm{quad}} = \frac{1}{2}\,\partial_\mu \phi\,\partial^\mu \phi ,
+    \mathcal{L}_{\mathrm{quad}} \propto F_{\mu\nu}F^{\mu\nu},
   \end{equation}
-  fails to enforce any upper bound on the magnitude of the gradient $\partial_\mu \phi$.
-  As a result, the associated fluxes and characteristic propagation speeds are unbounded.
-  This allows arbitrarily sharp gradients and instantaneous transmission of disturbances,
-  which is incompatible with the assumption of a finite maximal propagation speed.
+  admits arbitrarily large field gradients.
+  As a result, the associated fluxes and characteristic propagation scales are unbounded.
+  This behavior is incompatible with the existence of a finite maximal relaxation or
+  transport capacity at the microscopic level.
 
-  Imposing bounded propagation requires that the effective dynamics suppresses large
-  gradients in a smooth and intrinsic manner.
-  Specifically, the Lagrangian density must satisfy the following conditions:
-  (i) it reduces to a quadratic form in the small-gradient limit,
-  (ii) it enforces a strict upper bound on $|\partial_\mu \phi|$,
-  (iii) it introduces no additional microscopic length or energy scales beyond the
-  bound itself,
-  and (iv) it remains local and analytic in the admissible regime.
+  Imposing bounded propagation requires the effective Lagrangian density to satisfy
+  three minimal conditions:
+  (i) it reduces to a quadratic form in the weak-field limit,
+  (ii) it enforces a strict upper bound on admissible field invariants,
+  and (iii) it introduces no additional microscopic scales beyond the saturation scale
+  itself.
+  Polynomial extensions of quadratic actions fail to meet these requirements without
+  fine tuning or the introduction of auxiliary parameters.
 
-  Under these conditions, the functional form of $\mathcal{L}$ is highly constrained.
-  Polynomial extensions of the quadratic action fail to enforce a strict bound without
-  introducing additional scales or fine tuning.
-  By contrast, a square-root structure provides a natural and self-regularizing mechanism
-  that interpolates smoothly between the linear regime and a saturated regime at large
-  gradients.
-
-  The minimal Lagrangian density satisfying the above requirements is of Born--Infeld
-  type,
+  Under these assumptions, the effective Lagrangian density is uniquely constrained to
+  take a Born--Infeld--type form.
+  Anticipating the operator derivation developed in the following sections, the resulting
+  effective action can be written as
   \begin{equation}
-    \mathcal{L}_{\mathrm{BI}} =
-    b^{2}
+    S_{\mathrm{eff}}
+    = \beta^2 \int d^4x
     \left(
-      1 - \sqrt{1 - \frac{1}{b^{2}}\,
-    \partial_\mu \phi\,\partial^\mu \phi}
-    \right) ,
+      \sqrt{-\det\!\left(g_{\mu\nu} + \frac{1}{\beta} F_{\mu\nu}\right)}
+      - \sqrt{-\det(g_{\mu\nu})}
+    \right),
+    \label{eq:BI-action}
   \end{equation}
-  where $b$ sets the maximal admissible magnitude of the gradient.
-  In the limit $|\partial_\mu \phi| \ll b$, this expression reduces to the quadratic
-  theory, while for large gradients it enforces strict saturation.
+  where $g_{\mu\nu}$ is the effective metric and $F_{\mu\nu}$ an antisymmetric field
+  strength.
+  The parameter $\beta$ sets the maximal admissible field magnitude and fixes the
+  saturation scale of the theory.
 
-  The Born--Infeld structure is therefore not introduced as a phenomenological
-  modification or a choice of convenience.
-  It emerges as the unique effective representation, within the assumed class of local
-  and scale-free functionals, that is compatible with bounded propagation.
-  Configurations that would lead to singular behavior in a quadratic theory are smoothly
-  regulated, and both the energy density and flux remain finite for all admissible field
-  configurations.
+  In the weak-field regime $|F_{\mu\nu}| \ll \beta$, the expansion of
+  Eq.~\eqref{eq:BI-action} yields
+  \begin{equation}
+    \mathcal{L}_{\mathrm{eff}}
+    = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+    + \mathcal{O}\!\left(\beta^{-2}\right),
+  \end{equation}
+  showing that standard Maxwell electrodynamics is recovered universally as the
+  low-flux approximation of bounded relaxation.
+  Non-linear corrections become relevant only when the microscopic saturation scale
+  is probed.
 
-  Importantly, the Born--Infeld functional does not define the microscopic dynamics of
-  the underlying relational system.
-  It provides an effective encoding of admissible continuum configurations in regimes
-  where a local description is operationally meaningful.
-  Outside these regimes, the continuum description itself ceases to apply, and no claim
-  is made regarding the form of the dynamics beyond the saturation threshold.
+  Crucially, the Born--Infeld structure is not introduced here as a phenomenological
+  modification of electrodynamics.
+  It arises as the minimal local representation compatible with bounded propagation.
+  This observation can be formulated as a no-go statement: any local effective action
+  admitting a finite maximal flux cannot be purely quadratic in field gradients.
+  Born--Infeld electrodynamics therefore represents the unique natural completion of
+  Maxwell theory under bounded relaxation.
 
-  In the following sections, we show that this bounded-flux structure plays a central
-  role in selecting the class of effective operators that admit a consistent geometric
-  interpretation.
-  In particular, it dynamically restricts the admissible continuum limits of relational
-  Laplacians and thereby constrains the emergent spacetime geometries.
+  In the present framework, the parameter $\beta$ is not free.
+  It encodes the maximal transport or relaxation capacity of the underlying relational
+  system and is fixed by its microscopic connectivity density and stiffness.
+  In this sense, $\beta$ plays the role of an ultraviolet field scale, analogous to a
+  Planck-scale bound, although no specific identification is assumed at this stage.
+
+  The remainder of the paper establishes how the effective action
+  \eqref{eq:BI-action} emerges dynamically from a bounded relational Laplacian and how
+  this structure selects physically admissible spacetime geometries.
