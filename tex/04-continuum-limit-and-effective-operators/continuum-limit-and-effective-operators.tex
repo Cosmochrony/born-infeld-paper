@@ -1,0 +1,64 @@
+\section{Continuum limit and effective operators}
+  \label{sec:continuum-limit-and-effective-operators}
+
+  We briefly recall how an effective continuum description emerges from the spectral
+  structure of a relational Laplacian.
+  Detailed proofs and technical constructions can be found in~\cite{BeauRelationalSpectral}; here we
+  summarize only the elements required for the subsequent analysis.
+
+  We consider a sequence of weighted graphs $G_N=(V_N,E_N,w^{(N)})$ with increasing
+  cardinality $|V_N| \to \infty$.
+  We assume that the graphs become dense in the sense that each node has an increasing
+  number of neighbors, while the weights $w_{ij}^{(N)}$ decay sufficiently fast with a
+  relational distance scale.
+  No background embedding is assumed; all notions of proximity are defined intrinsically
+  from the graph structure.
+
+  Let $\phi_i$ denote a scalar field on the nodes of $G_N$.
+  The discrete Laplacian acts as
+  \begin{equation}
+    (L_N \phi)_i = \sum_j w_{ij}^{(N)} \left( \phi_i - \phi_j \right) .
+  \end{equation}
+  Under mild regularity, isotropy, and density assumptions, the action of $L_N$ on
+  slowly varying configurations converges to that of a second-order differential
+  operator on a smooth manifold $\mathcal{M}$,
+  \begin{equation}
+    L_N \;\longrightarrow\;
+    \mathcal{L}
+    = \nabla_\mu \!\left( A^{\mu\nu}(x)\,\nabla_\nu \right) ,
+  \end{equation}
+  where $A^{\mu\nu}(x)$ is a symmetric, positive-definite tensor field encoding the local
+  connectivity structure of the underlying relational system.
+
+  The operator $\mathcal{L}$ is elliptic in regimes where a continuum description is
+  admissible.
+  Its principal symbol,
+  \begin{equation}
+    \sigma_2(\mathcal{L})(x,k) = A^{\mu\nu}(x)\,k_\mu k_\nu ,
+  \end{equation}
+  fully characterizes the leading-order propagation of modes.
+  As shown in~\cite{BeauRelationalSpectral}, this symbol provides a natural and coordinate-independent
+  definition of an effective metric tensor,
+  \begin{equation}
+    g^{\mu\nu}(x) \propto A^{\mu\nu}(x) .
+  \end{equation}
+  The proportionality factor reflects a choice of units and plays no role in the
+  following.
+
+  Importantly, the metric $g_{\mu\nu}$ is not introduced as an independent dynamical
+  variable.
+  It is a derived object, encoding how relational variations propagate in the continuum
+  limit.
+  Different microscopic graphs leading to the same operator $\mathcal{L}$ are therefore
+  indistinguishable at the level of effective geometry.
+
+  The validity of this geometric description is restricted to regimes in which the
+  spectrum of $L_N$ admits a well-defined low-energy sector and where the bounded-flux
+  condition discussed in Section~2 is satisfied.
+  Outside these regimes, the continuum operator $\mathcal{L}$ ceases to provide an
+  adequate description, and geometric notions lose their operational meaning.
+
+  In the following section, we show that the bounded-flux constraint imposes strong
+  restrictions on the admissible forms of $A^{\mu\nu}(x)$.
+  In homogeneous relaxation regimes, these restrictions uniquely select a flat
+  effective geometry with a specific signature.

@@ -1,0 +1,89 @@
+\documentclass[pdflatex,article,submit,pdftex,moreauthors]
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{amsopn}
+\usepackage{amstext}
+\usepackage{microtype}
+\usepackage{xparse}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+% Boxes
+\usepackage[most]{tcolorbox}
+% Plots (pgfplots provides axis/addplot)
+\usepackage{pgfplots}
+\usetikzlibrary{intersections}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=1.18}
+\NewDocumentCommand{\subsubsubsection}{s m}{%
+  \IfBooleanTF{#1}{\paragraph*{#2}}{\paragraph{#2}}%
+}
+\usetikzlibrary
+{arrows.meta, calc, fit, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric, shadings, positioning,
+  decorations.markings, patterns}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\firstpage{1}
+\setcounter{page}{\@firstpage}
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2026}
+\copyrightyear{2026}
+\datereceived{ }
+\daterevised{ } % Comment out if no revised date
+\dateaccepted{ }
+\datepublished{ }
+\doinum{}
+
+\Title{Bounded Relaxation and the Dynamical Selection of Spacetime Geometry}
+
+\newcommand{\orcidauthorA}{0009-0001-7697-7868}
+
+\Author{Jérôme Beau\orcidA{}}
+
+\AuthorNames{Jérôme Beau}
+
+\address{%
+  \quad Independent Researcher; jerome.beau@cosmochrony.org}
+
+\corres{Correspondence: jerome.beau@cosmochrony.org}
+
+\input{abstract}
+
+\keyword{emergent spacetime, bounded propagation, Born--Infeld structure,
+  relational dynamics, effective operators, Minkowski spacetime,
+  Schwarzschild geometry, horizons}
+
+\providecommand{\bibcommenthead}{}
+\begin{document}
+
+  \input{01-introduction/introduction}
+  \input{02-bounded-flux-and-necessity-of-a-born-infeld-structure/bounded-flux-and-necessity-of-a-born-infeld-structure}
+  \input{03-relational-graph-laplacian-operator-and-relaxation-dynamics/relational-graph-laplacian-operator-and-relaxation-dynamics}
+  \input{04-continuum-limit-and-effective-operators/continuum-limit-and-effective-operators}
+  \input{05-emergence-of-minkowski-spacetime-from-homogeneous-relaxation/emergence-of-minkowski-spacetime-from-homogeneous-relaxation}
+  \input{06-localized-obstruction-and-schwarzschild-geometry/localized-obstruction-and-schwarzschild-geometry}
+  \input{07-horizon-as-flux-saturation-and-loss-of-projectability/horizon-as-flux-saturation-and-loss-of-projectability}
+  \input{08-Discussion and scope/discussion-and-conclusion}
+
+  \appendix
+  \clearpage
+
+  \section*{Appendices}
+    %\input{B-toy-model/toy-model}
+
+    \acknowledgments{The author acknowledges the use of large language models as a
+    supportive tool for refining language, structure, and internal consistency
+    during the development of this manuscript. All conceptual contributions,
+      theoretical choices, and interpretations remain the sole responsibility of the author.}
+
+    \conflictsofinterest{The author declares no conflicts of interest.}
+
+    \reftitle{References}
+    \bibliography{references}
+
+\end{document}
