@@ -2,9 +2,10 @@
   \label{sec:emergence-of-minkowski-spacetime}
 
   We now demonstrate that the class of homogeneous and isotropic relaxation regimes uniquely selects a flat
-  pseudo-Riemannian metric. In this framework, homogeneity is defined spectrally: the low-energy sector of the
-  relational Laplacian $\mathcal{L}$ is invariant under the translation group, implying that the effective tensor
-  $A^{\mu\nu}(x)$ reduces to a constant matrix $A^{\mu\nu}_0$.
+  pseudo-Riemannian metric.
+  In this framework, homogeneity is defined spectrally: the low-energy sector of the relational Laplacian $\mathcal{L}$
+  is invariant under the translation group, implying that the effective tensor $A^{\mu\nu}(x)$ reduces to a constant
+  matrix $A^{\mu\nu}_0$.
 
   The selection of the signature follows from the requirement of \textit{causal consistency}
   between the irreversible relaxation dynamics and the bounded-flux condition.
@@ -12,18 +13,20 @@
   The effective propagator associated with the bounded-flux operator must satisfy a well-posed initial value problem
   relative to $\tau$.
 
-  Consider the effective dispersion relation derived from the saturated regime of Eq.~(4).
+  Consider the effective dispersion relation derived from the saturated regime of Eq.~\eqref{eq:equation-weak-field}.
   In a local coordinate basis where the ordering direction is $\partial_\tau$, the bounded propagation requirement
   translates into a constraint on the characteristic cone of the operator.
   If we denote $k_0$ as the frequency conjugate to $\tau$ and $\mathbf{k}$ the spatial momenta, the stability of the
-  relaxation process requires that the operator remains hyperbolic~\cite{HormanderPDE}, ensuring a well-posed Cauchy
-  problem.
-  A purely Riemannian signature $(++++)$ would lead to an elliptic operator, where perturbations propagate
-  instantaneously across the entire relational structure, violating the bounded-flux postulate established in
+  relaxation process requires that the operator remains hyperbolic~\cite{HormanderPDE},
+  ensuring a well-posed Cauchy problem.
+  A purely Riemannian signature $(++++)$ would lead to an elliptic operator, for which no finite propagation cone
+  exists and perturbations propagate instantaneously across the entire relational structure,
+  violating the bounded-flux postulate established in
   Section~\ref{sec:bounded-relaxation-and-effective-action}.
 
   Conversely, a signature with multiple time-like directions would lead to ultra-hyperbolic equations, which are
-  generically unstable and fail to support a well-defined causal structure.
+  generically unstable and fail to support a well-defined causal structure or a well-posed initial value
+  problem~\cite{ChoquetBruhatGR}.
   Consequently, the only spectrally stable configuration that allows for a well-posed, monotonic relaxation
   under a finite maximal flux is the one where the ordering direction $\tau$ possesses a sign opposite to the diffusive
   spatial directions.
@@ -38,14 +41,15 @@
   unique effective representation of a maximally symmetric relational state at equilibrium.
 
   Crucially, the emergence of the $(-+++)$
-  signature provides a physical justification for the use of Wick rotations in standard field theory: here, the
-  ``Euclidean'' sector describes the relational connectivity at a fixed relaxation slice, while the Lorentzian
-  signature describes the dynamical unfolding of these relations.
-  In this light, the null-interval $ds^2 = 0$
-  represents the saturation of the relational flux, where the information transfer reaches the bound imposed by the
-  microscopic connectivity of $\chi$.
+  signature provides a physical justification for the use of Wick rotations in standard field theory:
+  here, the ``Euclidean'' sector describes the relational connectivity at a fixed relaxation slice,
+  while the Lorentzian signature encodes the dynamical unfolding of these relations.
+  In this light, the null interval $ds^2=0$ corresponds to the saturation of the relational flux,
+  where information transfer reaches the bound imposed by the microscopic connectivity of $\chi$,
+  a mechanism closely analogous to the causal saturation encountered in non-linear
+  Born--Infeld-type field theories~\cite{GibbonsBornInfeldCausality}.
 
   In the absence of localized obstructions, all curvature invariants $R_{\mu\nu\rho\sigma}$
-  vanish, and the geometry is identically flat.
-  We shall see in the next section how localized defects break this
-  symmetry and generate the Schwarzschild effective geometry through the same saturation mechanism.
+  vanish identically, and the geometry is flat.
+  We shall see in the next section how localized defects break this symmetry and generate the
+  Schwarzschild effective geometry through the same saturation mechanism.
