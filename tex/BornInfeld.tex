@@ -168,10 +168,13 @@
       \right),
       \label{eq:BI-action}
     \end{equation}
-    where $g_{\mu\nu}$ is the effective metric and $F_{\mu\nu}$ an antisymmetric field
-    strength.
+    where $g_{\mu\nu}$ is the effective metric and $F_{\mu\nu}$ an antisymmetric field strength.
     The parameter $\beta$ sets the maximal admissible field magnitude and fixes the
     saturation scale of the theory.
+
+    The saturation scale $\beta$ will be referred to as the bounded-flux (Born--Infeld)
+    scale: it characterizes the maximal admissible relational flux within the validity
+    domain of the continuum description.
 
     In the weak-field regime $|F_{\mu\nu}| \ll \beta$, the expansion of
     Eq.~\eqref{eq:BI-action} yields
@@ -265,7 +268,7 @@
     \begin{equation}
       \frac{d \phi_i}{d \tau} = - (L \phi)_i ,
     \end{equation}
-    where $\tau$ is a monotonically increaJsing parameter labeling the progression of the relaxation process.
+    where $\tau$ is a monotonically increasing parameter labeling the progression of the relaxation process.
     No interpretation of $\tau$ as a fundamental physical time is imposed.
     Instead, it serves as an ordering parameter associated with the irreversible flow
     toward admissible stationary configurations.
@@ -579,6 +582,15 @@
     The projection from relational states to effective spacetime observables is therefore
     non-injective in this regime.
 
+    A natural measure of this degeneracy is a projection entropy, defined by the
+    multiplicity of underlying configurations compatible with a given effective outcome:
+    \begin{equation}
+      S_{\Pi} = -\sum_{o \in O} \mu(\Pi^{-1}(o)) \log \mu(\Pi^{-1}(o)).
+      \label{eq:projection-entropy}
+    \end{equation}
+    In this sense, horizon formation corresponds to projection saturation, where the
+    growth of $\Pi^{-1}(o)$ limits the resolvability of local spacetime observables.
+
     This interpretation is consistent with structural analyses of non-injective effective
     descriptions, in which the loss of observable factorization reflects a limitation of the
     effective description rather than a breakdown of the underlying dynamics~\citep{BeauNonInjectiveBell}.
@@ -645,6 +657,23 @@
     loss of projectability rather than the presence of a physical singularity.
     This interpretation is consistent with structural analyses of non-injective effective
     descriptions and clarifies the operational meaning of strong-field regimes~\citep{BeauNonInjectiveBell}.
+
+    Saturation regimes also admit a complementary interpretation in terms of
+    projection-limited effective descriptions.
+    When the operator-based continuum representation approaches saturation, distinct
+    underlying relational configurations become indistinguishable at the level of
+    effective observables.
+    Rather than being lost, unresolved relational structure is re-encoded into effective
+    parameters (geometric or thermodynamic) that compensate for the reduced resolvability
+    of a local continuum description.
+
+    This perspective also clarifies the epistemic status of strong-field regimes.
+    No structural information needs to be regarded as fundamentally hidden; however, it
+    need not remain simultaneously resolvable within a single local continuum
+    representation.
+    In saturation regimes, observability is preserved in effective form, while the
+    resolvability of smooth spacetime observables becomes intrinsically limited by the
+    projectability of the underlying operator description.
 
     The scope of the present work is deliberately limited.
     We do not propose a complete theory of gravitation, nor do we address the microscopic

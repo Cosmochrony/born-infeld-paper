@@ -8,6 +8,14 @@ structure**, and that this structure dynamically selects a restricted class of
 admissible operators whose continuum limits define physically meaningful spacetime
 geometries.
 
+In the revised formulation, flux saturation is not only a dynamical constraint
+but also a limitation of projectability.
+In saturation regimes, unresolved relational structure is not lost but re-encoded
+into effective geometric and thermodynamic observables, such as curvature or
+horizon temperature.
+Born–Infeld saturation thus plays a dual role: it bounds admissible dynamics and
+governs how information is redistributed at the level of effective descriptions.
+
 In particular, we demonstrate that:
 - **flat Minkowski spacetime** emerges as the unique homogeneous and isotropic fixed
   point of bounded relaxation,
@@ -47,6 +55,12 @@ The paper is organized around the following statements:
    At flux saturation, the effective operator becomes degenerate and the geometric
    description ceases to apply. Horizons are interpreted as boundaries of the
    projectable regime, consistent with structural analyses of non-injective mappings.
+
+6. **Born–Infeld saturation governs the re-encoding of unresolved structure**  
+   In regimes where bounded relaxation saturates, effective geometric and
+   thermodynamic quantities act as compensatory parameters, encoding relational
+   degrees of freedom that cannot be resolved within a smooth spacetime
+   description.
 
 ## Relation to Other Papers
 
