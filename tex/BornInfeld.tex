@@ -248,6 +248,139 @@
     \eqref{eq:BI-action} emerges dynamically from a bounded relational Laplacian and how
     this structure selects physically admissible spacetime geometries.
 
+  \section{Structural Necessity of Non-Injective Projection}
+    \label{sec:noninjective-necessity}
+
+    The bounded relaxation principle introduced in Section~2 was formulated as a structural
+    property of the effective description.
+    We now show that this boundedness is not an independent assumption, but a necessary
+    consequence of requiring emergent gauge structure within a relational projection framework.
+
+    \subsection{Admissible projections and holonomy}
+      \label{subsec:admissible-projections-and-holonomy}
+
+      Let $\Pi : \Omega \to \mathcal{O}$ denote the projection from the relational configuration
+      space $\Omega$ to effective observables $\mathcal{O}$.
+      We assume that admissible projections satisfy locality and compatibility with the
+      relaxation ordering introduced in Section~2.
+
+      \begin{proposition}
+        If $\Pi$ is injective and compatible with relational locality,
+        then the induced connection on the projected fiber bundle has trivial holonomy.
+      \end{proposition}
+
+      \begin{proof}[Sketch]
+        Injectivity implies that each observable configuration corresponds to a unique
+        relational configuration.
+        Parallel transport of effective states along any closed loop in $\mathcal{O}$
+        lifts uniquely to a closed loop in $\Omega$.
+        Since no two distinct relational configurations are identified,
+        there exists no non-trivial re-identification symmetry.
+        Therefore the holonomy group reduces to the identity element.
+      \end{proof}
+
+      \begin{corollary}
+        An injective admissible projection cannot generate an emergent gauge structure.
+      \end{corollary}
+
+      Gauge symmetry requires the existence of non-trivial fiber re-identifications.
+      Trivial holonomy excludes such internal degrees of freedom.
+      Therefore, if electromagnetism is to arise as an effective $U(1)$ fiber symmetry,
+      the projection $\Pi$ must be non-injective.
+
+    \subsection{Finite transport capacity from non-injectivity}
+          \label{subsec:finite-transport-capacity-from-non-injectivity}
+
+      Non-injectivity implies that multiple relational configurations are mapped
+      to the same effective observable.
+      Let $\mathcal{E}_y = \Pi^{-1}(y)$ denote the equivalence class associated with
+      an observable $y \in \mathcal{O}$.
+
+      Because $\mathcal{E}_y$ is non-trivial,
+      the projection cannot resolve arbitrarily fine variations of relational flux.
+      Transport of relaxation across the projection therefore admits a maximal
+      admissible rate.
+      Beyond this rate, distinct relational configurations collapse into the same
+      effective description, and injectivity fails locally.
+
+      \begin{proposition}
+        Non-injective projection implies the existence of a finite maximal
+        effective transport capacity.
+      \end{proposition}
+
+      This bound is not imposed externally.
+      It follows from the finite projectability of relational information
+      through $\Pi$.
+      The effective field strength cannot grow without limit,
+      since sufficiently large gradients correspond to unresolved relational
+      distinctions.
+
+    \subsection{Selection of the Born--Infeld completion}
+      \label{subsec:selection-of-the-born--infeld-completion}
+
+      Consider a low-gradient regime in which the effective Lagrangian admits
+      a quadratic expansion
+      \begin{equation}
+        \mathcal{L}_{\mathrm{eff}} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+        + \mathcal{O}(F^4).
+      \end{equation}
+
+      If transport capacity is finite, the Lagrangian density must remain bounded
+      for large invariants $F_{\mu\nu}F^{\mu\nu}$.
+      Analyticity and Lorentz invariance then restrict the admissible nonlinear
+      completions.
+
+      Under these conditions, the minimal deformation that:
+      \begin{enumerate}
+        \item preserves gauge invariance,
+        \item reduces to Maxwell theory at low field strength,
+        \item bounds the field invariants,
+      \end{enumerate}
+      is of the Born--Infeld type,
+      \begin{equation}
+        \mathcal{L}_{\mathrm{BI}} =
+        \beta^2 \left(
+                  1 - \sqrt{1 + \frac{1}{2\beta^2}F_{\mu\nu}F^{\mu\nu}
+            - \frac{1}{16\beta^4}(F_{\mu\nu}\tilde F^{\mu\nu})^2}
+        \right),
+      \end{equation}
+      where $\beta$ sets the saturation scale.
+
+      \begin{theorem}
+        If emergent electromagnetism arises from a relational projection
+        that is local, Lorentz-compatible, and non-injective,
+        then the effective nonlinear completion of Maxwell theory must
+        belong to the Born--Infeld class.
+      \end{theorem}
+
+      \begin{proof}[Sketch]
+        Non-injectivity implies finite transport capacity.
+        Finite capacity requires bounded field invariants.
+        Gauge invariance and analyticity restrict admissible
+        Lorentz scalars to functions of $F^2$ and $(F\tilde F)^2$.
+        The Born--Infeld structure is the unique analytic completion
+        that preserves Maxwell behavior at low field strength
+        while ensuring bounded invariants.
+      \end{proof}
+
+    \subsection{Interpretational consequence}
+      \label{subsec:interpretational-consequence}
+
+      Born--Infeld dynamics is therefore not an arbitrary ultraviolet
+      modification.
+      It is structurally selected once three conditions are imposed:
+      \begin{enumerate}
+        \item emergent gauge symmetry,
+        \item relational locality,
+        \item non-injective projection.
+      \end{enumerate}
+
+      The bounded relaxation principle introduced in Section~2
+      is thus a necessary consequence of the geometric structure of
+      the projection itself.
+      In the following sections, this structural saturation will be shown
+      to control both spectral stability and horizon formation.
+
   \section{Relational graph, Laplacian operator, and relaxation dynamics}
     \label{sec:rel-graph-laplacian-op-and-relaxation-dynamics}
 
