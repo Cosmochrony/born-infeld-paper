@@ -10,6 +10,17 @@
 \usepackage{natbib}
 \usepackage{amsthm}
 \pgfplotsset{compat=1.18}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+% Theorem-like environments (amsthm is already loaded by the class in your log).
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
 
 \journal{Physics Letters B}
 
