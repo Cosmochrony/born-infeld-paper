@@ -1,4 +1,4 @@
-\documentclass[final,5p,times,twocolumn,authoryear]{elsarticle}
+\documentclass[epj]{svjour}
 
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{physics}
@@ -7,74 +7,45 @@
 \usepackage{tikz}
 \usepackage{xparse}
 \usepackage{pgfplots}
-\usepackage{natbib}
-\usepackage{amsthm}
 \pgfplotsset{compat=1.18}
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-% Theorem-like environments (amsthm is already loaded by the class in your log).
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[section]
-
-\theoremstyle{plain}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem{proposition}{Proposition}[section]
-\newtheorem{corollary}{Corollary}[section]
-
-\journal{Physics Letters B}
 
 \begin{document}
 
-  \begin{frontmatter}
+  \title{Bounded Relational Dynamics and the Structural Necessity of Born--Infeld Geometry}
 
-    \title{Emergent Spacetime Geometry from Bounded Relational Relaxation}
+  \author{J.~Beau}
 
-    \author{J\'er\^ome Beau}
-    \affiliation{
-      organization={Independent Researcher (Cosmochrony Project)},
-      city={Paris},
-      country={France}
-    }
-    \ead{jerome.beau@cosmochrony.org}
+  \institute{Independent Researcher}
 
-    \begin{abstract}
-      We investigate the structural conditions under which non-linear field dynamics
-      and effective spacetime geometry emerge from a relational operator framework
-      with irreversible relaxation and finite transport capacity.
-      We show that if the projection from relational configurations to effective
-      observables is required to support non-trivial gauge structure,
-      then it must be non-injective.
-      Non-injectivity implies a finite maximal transport capacity for admissible
-      relational flux.
+  \date{Received: date / Revised version: date}
 
-      Under locality, Lorentz compatibility, and analyticity,
-      finite transport capacity excludes purely quadratic effective actions.
-      We prove that the minimal non-linear completion consistent with gauge invariance
-      and bounded field invariants is of the Born--Infeld type.
+  \abstract{
+    We investigate how spacetime geometry and non-linear field dynamics can arise as
+    equilibrium descriptions of relational systems subject to a finite maximal relaxation flux.
+    We show that the existence of a universal bound on admissible relational gradients
+    excludes purely quadratic effective actions and uniquely enforces a Born--Infeld-type
+    structure as the minimal local representation compatible with saturation.
+    Starting from a weighted relational Laplacian with irreversible relaxation,
+    we derive an effective continuum description in which the metric tensor emerges
+    from the principal symbol of the operator, while antisymmetric perturbations
+    enter as an effective gauge field strength.
+    In homogeneous regimes, the bounded-relaxation constraint dynamically selects
+    flat spacetime with pseudo-Riemannian signature $(-+++)$ as a stable equilibrium.
+    When homogeneity is broken by a localized stationary obstruction,
+    the same mechanism yields the Schwarzschild geometry as the universal effective exterior solution.
+    Horizon formation corresponds to saturation of admissible relational flux and to
+    a loss of projectability of the continuum description rather than to a physical singularity.
+    These results provide an operator-based unification of Lorentzian geometry,
+    Born--Infeld electrodynamics, and horizon formation as consequences of bounded relational dynamics.
+  }
+%
+  \PACS{
+      {04.20.-q}{Classical general relativity} \and
+    {11.10.Lm}{Nonlinear or nonlocal theories and models} \and
+    {03.50.Kk}{Field theories in dimensions other than four}
+  }
 
-      Starting from a weighted relational Laplacian,
-      we derive a continuum limit in which the effective metric tensor arises from
-      the principal symbol of the operator,
-      while antisymmetric perturbations generate a $U(1)$ gauge field strength.
-      In homogeneous regimes, the bounded-relaxation constraint dynamically selects
-      flat spacetime with pseudo-Riemannian signature $(-+++)$ as a stable equilibrium.
-      When homogeneity is broken by a localized stationary obstruction,
-      the same mechanism yields the Schwarzschild geometry as the universal exterior solution.
-
-      Horizon formation is shown to correspond to saturation of admissible relational
-      flux and to a breakdown of continuum projectability rather than to a curvature singularity.
-      These results establish Born--Infeld electrodynamics, Lorentzian geometry,
-      and horizon structure as necessary consequences of bounded relational transport
-      in a non-injective projection framework.
-    \end{abstract}
-
-    \begin{keyword}
-      Emergent spacetime geometry \sep Bounded relational relaxation \sep Born--Infeld dynamics \sep
-      Relational operators \sep Non-linear field theory \sep Horizons
-    \end{keyword}
-
-  \end{frontmatter}
+  \maketitle
 
   \section{Introduction}
     \label{sec:introduction}
@@ -87,7 +58,7 @@
     dimension, and curvature arise as derived quantities rather than postulated ones.
     In particular, it has been demonstrated that, under mild regularity and density
     assumptions, the continuum limit of a relational Laplacian converges to a second-order
-    elliptic operator whose principal symbol defines an effective metric tensor~\citep{Beau2026a}.
+    elliptic operator whose principal symbol defines an effective metric tensor~\cite{Beau2026a}.
 
     While such results establish that effective spacetime geometry can emerge from
     non-geometric relational structures, they leave open a central question:
@@ -99,7 +70,7 @@
     Recent analyses have emphasized that effective geometric descriptions may fail when
     the underlying relational structure admits non-injective or degenerate projections,
     leading to a loss of observable factorization and to intrinsic limits of spacetime
-    representability~\citep{Beau2026b}.
+    representability~\cite{Beau2026b}.
 
     This work addresses a complementary and more restrictive problem.
     Rather than asking how geometry can emerge, we ask which effective geometries are
@@ -380,13 +351,13 @@
     \end{theorem}
 
     \begin{proof}[Sketch]
-        Non-injectivity implies finite transport capacity.
-        Finite capacity requires bounded field invariants.
-        Gauge invariance and analyticity restrict admissible
-        Lorentz scalars to functions of $F^2$ and $(F\tilde F)^2$.
-        The Born--Infeld structure is the unique analytic completion
-        that preserves Maxwell behavior at low field strength
-        while ensuring bounded invariants.
+      Non-injectivity implies finite transport capacity.
+      Finite capacity requires bounded field invariants.
+      Gauge invariance and analyticity restrict admissible
+      Lorentz scalars to functions of $F^2$ and $(F\tilde F)^2$.
+      The Born--Infeld structure is the unique analytic completion
+      that preserves Maxwell behavior at low field strength
+      while ensuring bounded invariants.
     \end{proof}
 
   \subsection{Interpretational consequence}
@@ -476,7 +447,7 @@
   We briefly recall how an effective continuum description and its associated action
   emerge from the spectral structure of a bounded relational Laplacian.
   Detailed proofs of the continuum limit and operator convergence can be found
-  in~\citep{Beau2026a}; here we summarize only the elements required to
+  in~\cite{Beau2026a}; here we summarize only the elements required to
   establish the effective field-theoretic description.
 
   We consider a sequence of weighted graphs $G_N=(V_N,E_N,w^{(N)})$ with increasing
@@ -509,7 +480,7 @@
     \sigma_2(\mathcal{L})(x,k)=A^{\mu\nu}(x)k_\mu k_\nu,
   \end{equation}
   fully characterizes the leading-order propagation of modes.
-  As shown in~\citep{Beau2026a}, this symbol provides a natural,
+  As shown in~\cite{Beau2026a}, this symbol provides a natural,
   coordinate-independent definition of an effective metric tensor,
   \begin{equation}
     g^{\mu\nu}(x)\propto A^{\mu\nu}(x),
@@ -575,7 +546,7 @@
   In a local coordinate basis where the ordering direction is $\partial_\tau$, the bounded propagation requirement
   translates into a constraint on the characteristic cone of the operator.
   If we denote $k_0$ as the frequency conjugate to $\tau$ and $\mathbf{k}$ the spatial momenta, the stability of the
-  relaxation process requires that the operator remains hyperbolic~\citep{HormanderPDE},
+  relaxation process requires that the operator remains hyperbolic~\cite{HormanderPDE},
   ensuring a well-posed Cauchy problem.
   A purely Riemannian signature $(++++)$ would lead to an elliptic operator, for which no finite propagation cone
   exists and perturbations propagate instantaneously across the entire relational structure,
@@ -584,7 +555,7 @@
 
   Conversely, a signature with multiple time-like directions would lead to ultra-hyperbolic equations, which are
   generically unstable and fail to support a well-defined causal structure or a well-posed initial value
-  problem~\citep{ChoquetBruhatGR}.
+  problem~\cite{ChoquetBruhatGR}.
   Consequently, the only spectrally stable configuration that allows for a well-posed, monotonic relaxation
   under a finite maximal flux is the one where the ordering direction $\tau$ possesses a sign opposite to the diffusive
   spatial directions.
@@ -605,7 +576,7 @@
   In this light, the null interval $ds^2=0$ corresponds to the saturation of the relational flux,
   where information transfer reaches the bound imposed by the microscopic connectivity of $\chi$,
   a mechanism closely analogous to the causal saturation encountered in non-linear
-  Born--Infeld-type field theories~\citep{GibbonsBornInfeldCausality}.
+  Born--Infeld-type field theories~\cite{GibbonsBornInfeldCausality}.
 
   In the absence of localized obstructions, all curvature invariants $R_{\mu\nu\rho\sigma}$
   vanish identically, and the geometry is flat.
@@ -759,7 +730,7 @@
 
   This interpretation is consistent with structural analyses of non-injective effective
   descriptions, in which the loss of observable factorization reflects a limitation of the
-  effective description rather than a breakdown of the underlying dynamics~\citep{Beau2026b}.
+  effective description rather than a breakdown of the underlying dynamics~\cite{Beau2026b}.
   In the present context, the horizon is precisely the locus where such non-injectivity
   becomes unavoidable as a consequence of bounded flux propagation.
 
@@ -799,7 +770,7 @@
   structure.
 
   Building on established results concerning the continuum limit of relational
-  Laplacians~\citep{Beau2026a}, we have shown that the bounded-flux constraint does more
+  Laplacians~\cite{Beau2026a}, we have shown that the bounded-flux constraint does more
   than regularize the effective theory.
   It dynamically selects the class of admissible differential operators whose principal
   symbols define effective spacetime metrics.
@@ -822,7 +793,7 @@
   At this point, the reconstruction of a local geometric description fails, signaling a
   loss of projectability rather than the presence of a physical singularity.
   This interpretation is consistent with structural analyses of non-injective effective
-  descriptions and clarifies the operational meaning of strong-field regimes~\citep{Beau2026b}.
+  descriptions and clarifies the operational meaning of strong-field regimes~\cite{Beau2026b}.
 
   Saturation regimes also admit a complementary interpretation in terms of
   projection-limited effective descriptions.
@@ -867,5 +838,17 @@
 
   \bibliographystyle{elsarticle-harv}
   \bibliography{references}
+
+  \begin{thebibliography}{}
+
+    \bibitem{BornInfeld}
+    M.~Born, L.~Infeld,
+    Proc.\ R.\ Soc.\ A \textbf{144}, 425 (1934)
+
+    \bibitem{GR}
+    A.~Einstein,
+    Ann.\ Phys.\ \textbf{49}, 769 (1916)
+
+  \end{thebibliography}
 
 \end{document}
