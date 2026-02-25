@@ -637,12 +637,13 @@
   Operationally, such an obstruction corresponds to a region where the relational
   connectivity or stiffness of the underlying system is enhanced, thereby constraining
   the local relaxation dynamics.
-  No assumption is made regarding the microscopic origin of this obstruction; only its
-  macroscopic effect on the effective operator is considered.
+  No assumption is made regarding the microscopic origin of this obstruction.
+  Only its macroscopic effect on the effective operator is considered.
 
   Outside the obstructed region, the system remains stationary and isotropic.
-  The effective continuum operator introduced in Section~\ref{sec:continuum-limit-and-effective-operators} therefore
-  takes the form
+  The effective continuum operator introduced in
+  Section~\ref{sec:continuum-limit-and-effective-operators}
+  therefore takes the form
   \begin{equation}
     \mathcal{L}
     = \nabla_\mu \!\left( A^{\mu\nu}(r)\,\nabla_\nu \right) ,
@@ -654,9 +655,11 @@
     A^{\mu\nu}(r) =
     \mathrm{diag}\!\left(-A_t(r),\,A_r(r),\,A_\perp(r),\,A_\perp(r)\right) .
   \end{equation}
+  The sign structure is inherited from the hyperbolic principal symbol selected in
+  Section~\ref{sec:emergence-of-minkowski-spacetime}.
 
-  In the exterior region, where no sources are present, the relaxation dynamics is governed
-  by the homogeneous equation
+  In the exterior region, where no additional sources are present, the relaxation dynamics
+  is governed by the homogeneous equation
   \begin{equation}
     \nabla_\mu \!\left( A^{\mu\nu}(r)\,\nabla_\nu \Phi \right) = 0 ,
   \end{equation}
@@ -670,21 +673,30 @@
     \right)
     = 0 .
   \end{equation}
+  This relation expresses conservation of effective flux through spheres of radius $r$.
   Its general solution is
   \begin{equation}
     \Phi(r) = \Phi_0 - \frac{C}{r} ,
   \end{equation}
   where $C$ is an integration constant characterizing the strength of the obstruction.
 
-  The emergence of a $1/r$ profile is therefore not imposed but follows generically from
-  flux conservation in a stationary and isotropic relaxation regime.
-  This behavior is independent of the detailed microscopic realization of the
-  obstruction and reflects the universal structure of the effective operator.
+  The emergence of the $1/r$ profile is therefore not imposed by symmetry alone.
+  It arises within the class of effective operators already constrained by bounded
+  constitutive response and Lorentz-compatible hyperbolicity.
+  In particular, it holds provided that
+  (i) the continuum projection remains local and injective in the exterior region,
+  (ii) effective isotropy is preserved,
+  and (iii) no additional microscopic scales are introduced beyond the universal
+  saturation scale defined in Section~\ref{sec:bounded-relaxation-and-effective-action}.
+  Under these conditions, flux conservation uniquely fixes the radial decay.
 
   Using the identification between the principal symbol of $\mathcal{L}$ and the effective
-  metric established in Section~\ref{sec:continuum-limit-and-effective-operators}, the radial dependence of
-  $A^{\mu\nu}(r)$ translates directly into a position-dependent metric tensor.
-  Up to a choice of coordinates, the effective line element can be written as
+  metric established in
+  Section~\ref{sec:continuum-limit-and-effective-operators},
+  the radial dependence of $A^{\mu\nu}(r)$ translates directly into a
+  position-dependent metric tensor.
+  Up to a choice of coordinates consistent with stationarity and spherical symmetry,
+  the effective line element can be written as
   \begin{equation}
     ds^{2}
     = - f(r)\, dt^{2}
@@ -694,32 +706,36 @@
   where the lapse function $f(r)$ is determined by the radial profile of the operator
   coefficients.
   Matching the weak-obstruction limit with the homogeneous solution of
-  Section~\ref{sec:emergence-of-minkowski-spacetime} fixes
+  Section~\ref{sec:emergence-of-minkowski-spacetime}
+  fixes
   \begin{equation}
     f(r) = 1 - \frac{r_s}{r} ,
   \end{equation}
-  where $r_s$ is a constant proportional to $C$.
+  where $r_s$ is a constant proportional to $C$ and measures the integrated flux
+  associated with the obstruction.
 
   The resulting geometry coincides with the Schwarzschild metric.
-  Here, however, it arises as an effective description of a stationary relaxation pattern
-  around a localized obstruction, rather than as a solution of an independent set of
-  gravitational field equations.
+  Here, however, it is not obtained from an independent set of metric field equations.
+  It arises as the universal stationary fixed point of a bounded relaxation operator
+  in the presence of a localized and isotropic perturbation.
   The parameter $r_s$ characterizes the strength of the obstruction in relational units
-  and is identified operationally through its influence on propagation and relaxation
-  rates.
+  and is identified operationally through its influence on admissible propagation cones
+  and relaxation rates.
 
   This derivation highlights that the Schwarzschild geometry is a universal effective
-  response to a localized and isotropic perturbation in a bounded relaxation framework.
-  No additional assumptions regarding curvature dynamics or energy--momentum sources are
-  required.
-  The geometry encodes how admissible modes propagate in the presence of constrained
-  relaxation, and its form is fixed by symmetry, stationarity, and flux conservation alone.
+  response within a bounded-relaxation framework.
+  Its form is fixed by symmetry, stationarity, hyperbolicity of the principal symbol,
+  and conservation of saturated flux.
+  No independent curvature dynamics or energy--momentum tensor needs to be postulated
+  at the effective level.
+  The geometry encodes how admissible continuum modes propagate when relaxation is
+  constrained by a localized enhancement of relational stiffness.
 
   In the next section, we analyze the behavior of the effective operator near the radius
   $r = r_s$.
-  We show that this surface corresponds to a saturation of the bounded-flux condition,
-  leading to a loss of projectability and providing an operator-theoretic interpretation
-  of horizons.
+  We show that this surface corresponds to saturation of the bounded-transport condition,
+  where the principal symbol degenerates and the continuum chart loses projectability,
+  providing an operator-theoretic interpretation of horizons.
 
   \section{Horizon as flux saturation and loss of projectability}
   \label{sec:horizon-as-flux-saturation-and-loss-of-projectability}
