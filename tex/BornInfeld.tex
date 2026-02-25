@@ -546,58 +546,88 @@
   \section{Emergence of Minkowski Spacetime: Spectral Stability and Signature Selection}
   \label{sec:emergence-of-minkowski-spacetime}
 
-  We now demonstrate that the class of homogeneous and isotropic relaxation regimes uniquely selects a flat
-  pseudo-Riemannian metric.
-  In this framework, homogeneity is defined spectrally: the low-energy sector of the relational Laplacian $\mathcal{L}$
-  is invariant under the translation group, implying that the effective tensor $A^{\mu\nu}(x)$ reduces to a constant
-  matrix $A^{\mu\nu}_0$.
+  We now demonstrate that the class of homogeneous and isotropic relaxation regimes
+  uniquely selects a flat pseudo-Riemannian metric.
+  In this framework, homogeneity is defined spectrally: the low-energy sector of the
+  relational Laplacian $\mathcal{L}$ is invariant under the translation group,
+  implying that the effective tensor $A^{\mu\nu}(x)$ reduces to a constant matrix
+  $A^{\mu\nu}_0$.
 
-  The selection of the signature follows from the requirement of \textit{causal consistency}
-  between the irreversible relaxation dynamics and the bounded-flux condition.
-  Let $\tau$ be the relaxation parameter defining the monotonic evolution of the relational system.
-  The effective propagator associated with the bounded-flux operator must satisfy a well-posed initial value problem
-  relative to $\tau$.
+  The selection of the metric signature follows from a structural compatibility
+  requirement between irreversible relaxation, bounded constitutive response, and
+  spectral stability of the effective operator.
+  Let $\tau$ denote the monotonic ordering parameter associated with relational
+  relaxation.
+  The effective continuum dynamics must admit a well-posed initial value problem
+  relative to $\tau$ in the regime where the projection remains local and injective.
 
-  Consider the effective dispersion relation derived from the saturated regime of Eq.~\eqref{eq:equation-weak-field}.
-  In a local coordinate basis where the ordering direction is $\partial_\tau$, the bounded propagation requirement
-  translates into a constraint on the characteristic cone of the operator.
-  If we denote $k_0$ as the frequency conjugate to $\tau$ and $\mathbf{k}$ the spatial momenta, the stability of the
-  relaxation process requires that the operator remains hyperbolic~\cite{HormanderPDE},
-  ensuring a well-posed Cauchy problem.
-  A purely Riemannian signature $(++++)$ would lead to an elliptic operator, for which no finite propagation cone
-  exists and perturbations propagate instantaneously across the entire relational structure,
-  violating the bounded-flux postulate established in
-  Section~\ref{sec:bounded-relaxation-and-effective-action}.
+  The bounded-flux condition established in
+  Section~\ref{sec:bounded-relaxation-and-effective-action}
+  excludes purely diffusive effective descriptions.
+  A parabolic operator would imply instantaneous spreading of perturbations across
+  the relational network, as is characteristic of elliptic spatial operators coupled
+  to first-order diffusion in $\tau$.
+  Such behavior is incompatible with a finite maximal transport capacity, since it
+  destroys any notion of a finite characteristic cone for effective propagation.
 
-  Conversely, a signature with multiple time-like directions would lead to ultra-hyperbolic equations, which are
-  generically unstable and fail to support a well-defined causal structure or a well-posed initial value
-  problem~\cite{ChoquetBruhatGR}.
-  Consequently, the only spectrally stable configuration that allows for a well-posed, monotonic relaxation
-  under a finite maximal flux is the one where the ordering direction $\tau$ possesses a sign opposite to the diffusive
+  In the homogeneous regime, the principal symbol of the effective operator is
+  determined by $A^{\mu\nu}_0$.
+  Denoting $k_0$ the frequency conjugate to $\tau$ and $\mathbf{k}$ the spatial
+  momenta, spectral stability requires that the dispersion relation define a
+  hyperbolic operator in the sense of Hörmander~\cite{HormanderPDE}.
+  Hyperbolicity ensures the existence of a finite characteristic cone and a
+  well-posed Cauchy problem for effective continuum modes.
+
+  A purely Riemannian signature $(++++)$ would render the principal symbol
+  positive definite.
+  The corresponding operator is elliptic, not hyperbolic.
+  No finite propagation cone exists in this case, and perturbations spread
+  instantaneously in the effective description, violating the bounded-transport
+  requirement.
+
+  Conversely, a signature with more than one time-like direction leads to
+  ultra-hyperbolic equations.
+  Such operators generically fail to admit a globally well-posed initial value
+  problem and are unstable under small perturbations of initial data~\cite{ChoquetBruhatGR}.
+  They therefore cannot provide a spectrally stable fixed point of the relaxation
+  dynamics.
+
+  The only configuration compatible with
+  (i) hyperbolicity of the principal symbol,
+  (ii) existence of a finite characteristic cone,
+  (iii) monotonic ordering along $\tau$,
+  and (iv) bounded constitutive response,
+  is the case in which the ordering direction carries a sign opposite to the
   spatial directions.
-  By normalizing the maximal relaxation speed to $c=1$, the effective metric is dynamically fixed to:
+  After normalization of the maximal relaxation speed to $c=1$, the effective
+  metric is dynamically fixed to
   \begin{equation}
     g_{\mu\nu} = \eta_{\mu\nu} = \mathrm{diag}(-1, +1, +1, +1).
   \end{equation}
 
-  This result implies that Lorentz invariance is an \textit{emergent symmetry}
-  of the homogeneous fixed point of the relaxation dynamics.
-  The Minkowski metric is not a background stage but the
-  unique effective representation of a maximally symmetric relational state at equilibrium.
+  Lorentz invariance thus emerges as a symmetry of the homogeneous spectral fixed
+  point.
+  The Minkowski metric is not postulated as a background structure.
+  It is the unique effective representation of a maximally symmetric relational
+  equilibrium compatible with bounded relaxation.
 
-  Crucially, the emergence of the $(-+++)$
-  signature provides a physical justification for the use of Wick rotations in standard field theory:
-  here, the ``Euclidean'' sector describes the relational connectivity at a fixed relaxation slice,
-  while the Lorentzian signature encodes the dynamical unfolding of these relations.
-  In this light, the null interval $ds^2=0$ corresponds to the saturation of the relational flux,
-  where information transfer reaches the bound imposed by the microscopic connectivity of $\chi$,
-  a mechanism closely analogous to the causal saturation encountered in non-linear
+  The emergence of the $(-+++)$ signature also clarifies the role of Wick rotation.
+  The Euclidean sector corresponds to relational connectivity on a fixed relaxation
+  slice, where the operator is effectively elliptic.
+  The Lorentzian signature encodes the dynamical unfolding of relational structure
+  along the monotonic ordering direction.
+  The null interval $ds^2=0$ corresponds to saturation of the effective characteristic
+  cone, where relational transport reaches the maximal rate permitted by the
+  microscopic connectivity of $\chi$.
+  This mechanism parallels the causal saturation encountered in non-linear
   Born--Infeld-type field theories~\cite{GibbonsBornInfeldCausality}.
 
-  In the absence of localized obstructions, all curvature invariants $R_{\mu\nu\rho\sigma}$
-  vanish identically, and the geometry is flat.
-  We shall see in the next section how localized defects break this symmetry and generate the
-  Schwarzschild effective geometry through the same saturation mechanism.
+  In the absence of localized obstructions, all curvature invariants
+  $R_{\mu\nu\rho\sigma}$ vanish identically.
+  The homogeneous relational fixed point therefore corresponds to flat spacetime.
+  In the next section, we show how localized defects break this maximal symmetry
+  and generate the Schwarzschild geometry through the same bounded-saturation
+  mechanism.
 
   \section{Localized obstruction and Schwarzschild geometry}
   \label{sec:localized-obstruction-and-schwarzschild-geometry}
