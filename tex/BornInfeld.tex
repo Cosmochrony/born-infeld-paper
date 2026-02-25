@@ -12,6 +12,18 @@
 
 \begin{document}
 
+  \makeatletter
+  \providecommand{\bibcite}[2]{\global\@namedef{b@#1}{#2}}
+  \providecommand{\citation}[1]{}
+  \bibcite{BornInfeld}{1}
+  \bibcite{HormanderPDE}{2}
+  \bibcite{ChoquetBruhat2009}{3}
+  \bibcite{Gibbons1998}{4}
+  \bibcite{Beau2026a}{5}
+  \bibcite{Beau2026b}{6}
+  \bibcite{Beau2026whitepaper}{7}
+  \makeatother
+
   \title{Bounded Relational Dynamics and the Structural Necessity of Born--Infeld Geometry}
 
   \author{J.~Beau}
@@ -962,7 +974,43 @@
   and takes full responsibility for the scientific content, interpretations,
   and conclusions of the published article.
 
-  \bibliographystyle{unsrt}
-  \bibliography{references}
+  \begin{thebibliography}{1}
+
+    \bibitem{BornInfeld}
+    Max Born and Leopold Infeld.
+    \newblock Foundations of the new field theory.
+    \newblock {\em Proceedings of the Royal Society A}, 144(852):425--451, 1934.
+
+    \bibitem{HormanderPDE}
+    Lars H{\"o}rmander.
+    \newblock {\em The Analysis of Linear Partial Differential Operators I}.
+    \newblock Springer, 1983.
+
+    \bibitem{ChoquetBruhat2009}
+    Yvonne Choquet-Bruhat.
+    \newblock {\em General Relativity and the Einstein Equations}.
+    \newblock Oxford University Press, 2009.
+
+    \bibitem{Gibbons1998}
+    G.~W. Gibbons.
+    \newblock Born--infeld particles and dirichlet p-branes.
+    \newblock {\em Nuclear Physics B}, 514(3):603--639, 1998.
+
+    \bibitem{Beau2026a}
+    J{\'e}r{\^o}me Beau.
+    \newblock Relational reconstruction of spacetime geometry from graph
+    laplacians, 2026.
+
+    \bibitem{Beau2026b}
+    J{\'e}r{\^o}me Beau.
+    \newblock Bell inequality violations from non-injective effective descriptions,
+    2026.
+
+    \bibitem{Beau2026whitepaper}
+    J{\'e}r{\^o}me Beau.
+    \newblock Cosmochrony: A pre-geometric relational framework for emergent
+    physics, 2026.
+
+  \end{thebibliography}
 
 \end{document}
