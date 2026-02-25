@@ -741,75 +741,89 @@
   \label{sec:horizon-as-flux-saturation-and-loss-of-projectability}
 
   We now examine the behavior of the effective continuum description in the vicinity of
-  the radius $r=r_s$ identified in Section~\ref{sec:localized-obstruction-and-schwarzschild-geometry}.
-  At this radius, the lapse function $f(r)$ vanishes and the effective geometry develops a
-  horizon in the standard geometric representation.
-  We show that, in the present framework, this phenomenon admits a precise and purely
-  operator-theoretic interpretation in terms of flux saturation.
+  the radius $r=r_s$ identified in
+  Section~\ref{sec:localized-obstruction-and-schwarzschild-geometry}.
+  At this radius, the lapse function $f(r)$ vanishes and the effective geometry develops
+  a horizon in the standard geometric representation.
+  We show that, in the present framework, this phenomenon admits a precise
+  operator-theoretic interpretation in terms of saturation of the principal symbol.
 
-  As established in Section~\ref{sec:bounded-relaxation-and-effective-action}, the effective action and the associated
-  continuum operator remain valid only as long as the bounded-flux condition is satisfied.
+  As established in
+  Section~\ref{sec:bounded-relaxation-and-effective-action},
+  the effective action and its associated continuum operator remain valid only as long
+  as the bounded constitutive response is satisfied.
   In the presence of a localized obstruction, the radial dependence of the operator
   coefficients $A^{\mu\nu}(r)$ reflects the increasing constraint imposed on relational
   relaxation.
-  As $r$ decreases, admissible gradients approach the maximal value set by the saturation
-  scale $\beta$.
-  At $r=r_s$, this bound is reached.
+  As $r$ decreases, admissible gradients approach the maximal value set by the universal
+  saturation scale $\beta$.
+  At $r=r_s$, this bound is reached in the effective description.
 
-  Beyond this point, the effective operator can no longer sustain propagating modes
-  compatible with bounded relaxation.
-  While the differential expression for $\mathcal{L}$ remains formally defined, its
-  principal symbol becomes degenerate at $r=r_s$.
-  As a result, the reconstruction of a local effective metric from the operator symbol
-  ceases to be well-defined.
-  This breakdown signals the loss of validity of the geometric description rather than
-  the presence of a physical singularity.
+  At this radius, the principal symbol of the operator
+  \[
+    \sigma_2(\mathcal{L})(x,k)
+    = A^{\mu\nu}(r)\,k_\mu k_\nu
+  \]
+  becomes degenerate.
+  Equivalently, the determinant of $A^{\mu\nu}(r)$ vanishes at $r=r_s$.
+  The operator therefore undergoes a local change of type.
+  Hyperbolicity, which guaranteed a well-posed Cauchy problem in the exterior region,
+  is lost at this surface.
+
+  This loss of hyperbolicity implies that the effective continuum description can no
+  longer sustain propagating modes with a finite characteristic cone.
+  The Cauchy problem for effective fields ceases to be well posed at $r=r_s$.
+  Importantly, this degeneracy does not signal a singularity of the underlying
+  relational substrate.
+  It indicates only the breakdown of the continuum chart obtained through projection.
 
   From the perspective of the effective action, the horizon corresponds to the locus
-  where the Born--Infeld saturation becomes operative.
-  At this point, the non-linear structure of the action enforces a maximal admissible
-  field strength, preventing divergences in energy density and flux.
-  As in standard Born--Infeld electrodynamics, the saturation mechanism ensures the
-  finiteness of physically relevant quantities and excludes point-like singular sources.
+  where Born--Infeld saturation becomes operative in the constitutive relation.
+  The non-linear structure of the action enforces a maximal admissible flux density,
+  preventing divergences in field invariants and energy densities.
+  As in standard Born--Infeld electrodynamics, saturation regularizes quantities that
+  would otherwise diverge in a purely quadratic theory.
 
-  From the viewpoint of the underlying relational dynamics, the horizon separates two
-  qualitatively distinct regimes.
-  Outside $r_s$, the relaxation dynamics admits a faithful projection into a continuum
-  description with well-defined geometric and field-theoretic observables.
-  At and inside $r_s$, distinct microscopic configurations of the relational system become
-  indistinguishable at the level of effective operators.
-  The projection from relational states to effective spacetime observables is therefore
-  non-injective in this regime.
+  From the viewpoint of the relational dynamics, the horizon separates two distinct
+  regimes of projectability.
+  For $r>r_s$, the relaxation dynamics admits a locally injective projection into a
+  continuum description with well-defined geometric observables.
+  At $r=r_s$, distinct microscopic configurations begin to map to identical effective
+  operator data.
+  The projection from relational states to spacetime observables becomes
+  intrinsically non-injective.
 
-  A natural measure of this degeneracy is a projection entropy, defined by the
-  multiplicity of underlying configurations compatible with a given effective outcome:
+  A quantitative measure of this degeneracy can be expressed through a projection
+  entropy defined by the multiplicity of underlying configurations compatible with a
+  given effective observable:
   \begin{equation}
-    S_{\Pi} = -\sum_{o \in O} \mu(\Pi^{-1}(o)) \log \mu(\Pi^{-1}(o)).
+    S_{\Pi}
+    = -\sum_{o \in O}
+    \mu(\Pi^{-1}(o)) \log \mu(\Pi^{-1}(o)).
     \label{eq:projection-entropy}
   \end{equation}
-  In this sense, horizon formation corresponds to projection saturation, where the
-  growth of $\Pi^{-1}(o)$ limits the resolvability of local spacetime observables.
+  Horizon formation corresponds to the regime in which the growth of
+  $\Pi^{-1}(o)$ limits the local resolvability of continuum observables.
 
-  This interpretation is consistent with structural analyses of non-injective effective
-  descriptions, in which the loss of observable factorization reflects a limitation of the
-  effective description rather than a breakdown of the underlying dynamics~\cite{Beau2026b}.
-  In the present context, the horizon is precisely the locus where such non-injectivity
-  becomes unavoidable as a consequence of bounded flux propagation.
+  This interpretation is consistent with structural analyses of non-injective
+  effective descriptions, in which loss of observable factorization reflects a
+  limitation of the effective representation rather than a breakdown of the
+  microscopic dynamics~\cite{Beau2026b}.
+  In the present framework, the horizon is precisely the surface where bounded
+  transport and hyperbolicity cease to be simultaneously compatible.
 
-  Importantly, no extension of the effective spacetime geometry beyond the horizon is
-  required for internal consistency.
-  The continuum description is explicitly restricted to projectable regimes, and the
-  horizon marks the boundary of its domain of applicability.
-  Questions concerning the behavior of the relational system beyond this boundary are
-  meaningful only at the level of the underlying dynamics and need not admit a geometric
-  or field-theoretic representation.
+  No extension of the effective spacetime manifold beyond $r_s$ is required for
+  internal consistency.
+  The continuum description is explicitly restricted to regimes in which the
+  principal symbol remains non-degenerate.
+  The horizon marks the boundary of this domain of applicability.
 
-  This operator-based interpretation reframes horizons as kinematic consequences of
-  bounded relaxation rather than as geometric pathologies.
-  It explains both the universality of horizon formation and the robustness of
-  Schwarzschild geometry under variations of the microscopic relational structure, while
-  clarifying why attempts to probe beyond the horizon using effective spacetime observables
-  are intrinsically limited.
+  This operator-based interpretation reframes horizons as kinematic consequences
+  of bounded relaxation rather than as geometric singularities.
+  It explains the universality of horizon formation within the class of bounded
+  relational operators and clarifies why attempts to probe beyond the horizon
+  using effective spacetime observables are intrinsically limited by the
+  saturation of the constitutive response.
 
   \section{Discussion and conclusion}
   \label{sec:discussion-and-conclusion}
