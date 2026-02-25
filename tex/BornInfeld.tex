@@ -463,39 +463,60 @@
   We briefly recall how an effective continuum description and its associated action
   emerge from the spectral structure of a bounded relational Laplacian.
   Detailed proofs of the continuum limit and operator convergence can be found
-  in~\cite{Beau2026a}; here we summarize only the elements required to
-  establish the effective field-theoretic description.
+  in~\cite{Beau2026a}.
+  Here we summarize only the elements required to establish the effective
+  field-theoretic description in a form sufficient for the subsequent analysis.
 
-  We consider a sequence of weighted graphs $G_N=(V_N,E_N,w^{(N)})$ with increasing
-  cardinality $|V_N|\to\infty$.
-  The graphs are assumed to become dense in the sense that each node has an increasing
-  number of neighbors, while the weights $w_{ij}^{(N)}$ decay sufficiently fast with an
-  intrinsic relational distance.
-  No background embedding is assumed; all notions of proximity are defined intrinsically
-  from the graph structure.
+  We consider a sequence of weighted graphs
+  $G_N=(V_N,E_N,w^{(N)})$ with increasing cardinality $|V_N|\to\infty$.
+  The graphs are assumed to satisfy three structural conditions:
+  (i) uniformly bounded degree growth relative to the intrinsic scaling,
+  (ii) local quasi-isotropy in the sense that weighted second moments of adjacency
+  converge to an isotropic tensor in the low-energy sector,
+  and (iii) sufficient decay of $w_{ij}^{(N)}$ with intrinsic relational distance to
+  ensure locality of the limit operator.
+  No background embedding is assumed.
+  All notions of proximity are defined intrinsically from the graph structure.
 
   Let $\phi_i$ denote a scalar degree of freedom on the nodes of $G_N$.
   The discrete Laplacian acts as
   \begin{equation}
     (L_N \phi)_i = \sum_j w_{ij}^{(N)}\left(\phi_i-\phi_j\right).
   \end{equation}
-  Under mild regularity, isotropy, and density assumptions, the action of $L_N$ on slowly
-  varying configurations converges to that of a second-order differential operator on a
-  smooth manifold $\mathcal{M}$,
+
+  Under the above conditions, the family $L_N$ converges in the strong resolvent
+  sense, within a fixed low-energy spectral window, to a second-order differential
+  operator on a smooth manifold $\mathcal{M}$.
+  More precisely, for modes whose eigenvalues remain bounded as $N\to\infty$,
+  the action of $L_N$ on slowly varying configurations converges to
   \begin{equation}
     L_N \;\longrightarrow\;
     \mathcal{L}
     = \nabla_\mu\!\left(A^{\mu\nu}(x)\nabla_\nu\right),
   \end{equation}
-  where $A^{\mu\nu}(x)$ is a symmetric tensor encoding the local connectivity and
-  stiffness of the underlying relational system.
+  where $A^{\mu\nu}(x)$ is a symmetric tensor encoding the local connectivity
+  and stiffness of the underlying relational system.
 
-  In admissible continuum regimes, the operator $\mathcal{L}$ is elliptic.
-  Its principal symbol,
+  The convergence holds in the sense that resolvents
+  $(L_N+\lambda I)^{-1}$ converge strongly to
+  $(\mathcal{L}+\lambda I)^{-1}$ for $\lambda$ in the resolvent set
+  associated with the low-energy sector.
+  This guarantees stability of the principal symbol under bounded perturbations
+  of the microscopic graph structure and ensures that the effective operator is
+  insensitive to microscopic rearrangements that do not alter the spectral window.
+
+  The tensor $A^{\mu\nu}(x)$ arises from the second weighted moments of adjacency.
+  Local quasi-isotropy implies that anisotropic corrections remain controlled
+  and contribute only higher-order perturbations to the principal symbol.
+  Consequently, the leading-order propagation properties of continuum modes are
+  robust under bounded microscopic anisotropies.
+
+  In admissible continuum regimes, the operator $\mathcal{L}$ is elliptic on
+  spatial slices and admits a well-defined principal symbol,
   \begin{equation}
     \sigma_2(\mathcal{L})(x,k)=A^{\mu\nu}(x)k_\mu k_\nu,
   \end{equation}
-  fully characterizes the leading-order propagation of modes.
+  which fully characterizes the leading-order propagation of modes.
   As shown in~\cite{Beau2026a}, this symbol provides a natural,
   coordinate-independent definition of an effective metric tensor,
   \begin{equation}
@@ -505,18 +526,22 @@
 
   Crucially, the effective metric $g_{\mu\nu}$ is not introduced as an independent
   dynamical variable.
-  It is a derived object, encoding how relational variations propagate in the continuum
-  limit.
-  Different microscopic graphs leading to the same operator $\mathcal{L}$ are therefore
+  It is a derived object encoding how relational variations propagate in the
+  continuum limit.
+  Distinct microscopic graphs leading to the same principal symbol are therefore
   indistinguishable at the level of effective geometry.
+  The continuum description is thus defined only up to spectral equivalence
+  within the selected energy window.
 
-  When antisymmetric perturbations of the relational connectivity are included, the
-  continuum operator acquires an additional two-form contribution that enters naturally
-  as a field strength $F_{\mu\nu}$.
-  As discussed in Section~\ref{sec:bounded-relaxation-and-effective-action}, bounded relaxation constrains the
-  admissible gradients of these perturbations.
-  At the level of the effective continuum description, this constraint is most naturally
-  implemented at the level of the action rather than the equations of motion.
+  When antisymmetric perturbations of the relational connectivity are included,
+  the continuum operator acquires an additional two-form contribution that
+  naturally enters as a field strength $F_{\mu\nu}$.
+  As discussed in
+  Section~\ref{sec:bounded-relaxation-and-effective-action},
+  bounded relaxation constrains the admissible gradients of these perturbations.
+  At the level of the effective continuum description, this constraint is most
+  consistently implemented at the level of the action rather than the equations
+  of motion.
 
   The resulting effective action takes a Born--Infeld form,
   \begin{equation}
@@ -528,20 +553,22 @@
     \right),
     \label{eq:BI-action-continuum}
   \end{equation}
-  where $\beta$ sets the maximal admissible relational flux.
-  In the weak-field regime, this action reduces to the standard Maxwell form, while at
-  large field strengths it enforces saturation of the effective dynamics.
+  where $\beta$ sets the universal maximal admissible relational flux.
+  In the weak-field regime, this action reduces to the Maxwell form,
+  while at large field strengths it enforces saturation of the constitutive
+  response.
 
-  The validity of this effective action is restricted to regimes in which the spectrum of
-  $L_N$ admits a well-defined low-energy sector and the bounded-flux condition holds.
-  Outside these regimes, the continuum operator $\mathcal{L}$ ceases to provide an
-  adequate description, and geometric or field-theoretic notions lose their operational
-  meaning.
+  The validity of this effective action is restricted to regimes in which the
+  spectrum of $L_N$ admits a stable low-energy sector and the bounded-flux
+  condition remains satisfied.
+  Outside this spectral window, strong-resolvent convergence no longer holds,
+  the principal symbol ceases to provide a faithful description,
+  and geometric or field-theoretic notions lose operational meaning.
 
   In the following section, we show that the bounded-relaxation constraint further
   restricts the admissible forms of $A^{\mu\nu}(x)$.
-  In homogeneous regimes, these restrictions uniquely select a flat effective geometry
-  with a specific signature.
+  In homogeneous regimes, these restrictions uniquely select a flat effective
+  geometry with a specific signature.
 
   \section{Emergence of Minkowski Spacetime: Spectral Stability and Signature Selection}
   \label{sec:emergence-of-minkowski-spacetime}
