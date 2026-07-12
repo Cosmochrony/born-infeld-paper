@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you cite this work, please use the metadata from this file."
+title: "Bounded Relational Dynamics and the Structural Necessity of Born–Infeld Geometry"
+type: software
+authors:
+  - family-names: "Beau"
+    given-names: "Jérôme"
+repository-code: "https://github.com/Cosmochrony/born-infeld-paper"
+url: "https://cosmochrony.org/science/spectral-gravity/born-infeld/"
+doi: "10.5281/zenodo.18407505"
+license: "CC-BY-4.0"
+preferred-citation:
+  type: article
+  title: "Bounded Relational Dynamics and the Structural Necessity of Born–Infeld Geometry"
+  authors:
+    - family-names: "Beau"
+      given-names: "Jérôme"
+  year: 2026
+  doi: "10.5281/zenodo.18407505"
+  url: "https://doi.org/10.5281/zenodo.18407505"
