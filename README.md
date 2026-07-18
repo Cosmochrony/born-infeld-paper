@@ -1,127 +1,82 @@
-This repository contains the source of the paper on **bounded relaxation, Born–Infeld
-saturation, and the dynamical selection of spacetime geometry** (paper C).
+# Bounded Relational Capacity and Its Conditional Continuum Dynamics
 
-This work studies a class of **relational systems** whose effective continuum
-descriptions admit a **finite maximal propagation or relaxation flux**.
-We show that this minimal constraint uniquely enforces a **Born–Infeld–type effective
-structure**, and that this structure dynamically selects a restricted class of
-admissible operators whose continuum limits define physically meaningful spacetime
-geometries.
+**Born–Infeld Candidates, Signature Selection, and Open Projection Bridges** (paper C).
 
-In the revised formulation, flux saturation is not only a dynamical constraint
-but also a limitation of projectability.
-In saturation regimes, unresolved relational structure is not lost but re-encoded
-into effective geometric and thermodynamic observables, such as curvature or
-horizon temperature.
-Born–Infeld saturation thus plays a dual role: it bounds admissible dynamics and
-governs how information is redistributed at the level of effective descriptions.
+This paper organizes the bounded-relaxation approach to emergent dynamics around a single
+structural axiom and states precisely what follows from it, under which hypotheses, and what
+remains open.
 
-In particular, we demonstrate that:
-- **flat Minkowski spacetime** emerges as the unique homogeneous and isotropic fixed
-  point of bounded relaxation,
-- **Schwarzschild geometry** arises universally as the effective exterior description
-  of a localized and stationary obstruction,
-- **horizons** correspond to flux saturation and loss of projectability, rather than to
-  physical singularities.
+## The capacity axiom
 
-The analysis is entirely operator-based and does not postulate independent metric
-dynamics or gravitational field equations.
+The capacity axiom **[A-cap]** states that the per-node relaxation rate of an admissible
+relational configuration is uniformly bounded:
 
-## Core Claims
+\[
+\lvert \partial_\tau \phi_v \rvert \le c_{\mathrm{BI}}
+\quad \text{for all nodes } v .
+\]
 
-The paper is organized around the following statements:
+The axiom is motivated by non-injective projection together with finite local
+distinguishability; it is not a consequence of non-injectivity alone, which constrains
+information rather than rates.
+Companion papers of the spectral admissibility programme use this bound as an input; the
+axiom places their derivations on an explicit, named hypothesis.
 
-1. **Bounded propagation excludes purely quadratic effective actions**  
-   Any local continuum description admitting a finite maximal flux cannot be governed
-   by a purely quadratic functional. Under mild assumptions, bounded propagation
-   uniquely enforces a Born–Infeld–type structure.
+## Statements and statuses
 
-2. **Effective geometry is selected dynamically, not postulated**  
-   The bounded-flux condition restricts the class of admissible relational Laplacians
-   whose continuum limits admit a geometric interpretation. The effective metric
-   arises from the principal symbol of the selected operator.
+- **Axiom**: [A-cap], the uniform bound on the per-node relaxation rate.
+- **Structural motivation (not derivation)**: non-injective projection plus finite local
+  distinguishability motivate [A-cap]; the injectivity–holonomy argument motivates
+  restricting attention to non-injective projections.
+- **Computation**: the Maxwell weak-field limit of the Born–Infeld candidate, its
+  electric-domain saturation, and the finite point-charge self-energy (classical results).
+- **Conditional**: Lorentzian signature selection \((-+++)\), given an established continuum
+  limit for the relational Laplacian and a second-order hyperbolic sector ([H-hyp]);
+  the Newtonian exterior profile \(\Phi = \Phi_0 - C/r\) under stationary spherically
+  symmetric flux conservation; the Schwarzschild form, given additionally the closure
+  \(f_t f_r = 1\) and the exact temporal identification as external dynamical input.
+- **Open**: the constitutive bridge (which continuum quantity inherits the capacity bound —
+  null configurations carry arbitrary amplitude at vanishing invariants, so no local
+  Lagrangian of the invariants bounds every direction); the propagation bridge (deriving an
+  exceptional-propagation condition, which by the Boillat–Plebański theorem would select the
+  Born–Infeld candidate); the gauge-sector bridge (the symmetric weighted Laplacian does not
+  construct an antisymmetric gauge curvature); the passage from first-order relaxation to
+  second-order dynamics; the intrinsic (embedding-free) continuum limit.
 
-3. **Minkowski spacetime emerges as a homogeneous relaxation fixed point**  
-   In the absence of localized obstructions, homogeneous and isotropic relaxation
-   uniquely selects a flat spacetime with pseudo-Riemannian signature \((- + + +)\),
-   without assuming Lorentz invariance at the microscopic level.
+Born–Infeld theory is presented as a **saturation candidate**, distinguished in the
+literature by exceptional propagation, not as a derived or unique completion.
+Horizons are discussed as a **foliation-relative interpretation** in the outlook, not as a
+theorem.
 
-4. **Schwarzschild geometry is the universal response to a localized obstruction**  
-   For stationary and isotropic perturbations, flux conservation alone leads to a
-   \(1/r\) profile and induces the Schwarzschild metric as the effective exterior
-   geometry, independently of the microscopic details.
+## Relation to other papers
 
-5. **Horizons mark loss of projectability, not physical singularities**  
-   At flux saturation, the effective operator becomes degenerate and the geometric
-   description ceases to apply. Horizons are interpreted as boundaries of the
-   projectable regime, consistent with structural analyses of non-injective mappings.
-
-6. **Born–Infeld saturation governs the re-encoding of unresolved structure**  
-   In regimes where bounded relaxation saturates, effective geometric and
-   thermodynamic quantities act as compensatory parameters, encoding relational
-   degrees of freedom that cannot be resolved within a smooth spacetime
-   description.
-
-## Relation to Other Papers
-
-- This paper builds on results concerning **spectral and relational emergence of
-  geometry** developed in paper A.
-- Its interpretation of horizons and strong-field regimes is conceptually aligned
-  with the analysis of **non-injective effective descriptions** developed in paper B.
-
-Each paper is logically autonomous, but together they form a coherent analysis of
-emergent geometry, its limitations, and its operational meaning.
-
-## What This Paper Does Not Assume
-
-To avoid conflating structural and ontological claims, the paper does not assume:
-
-- a fundamental spacetime manifold
-- independent metric degrees of freedom
-- Einstein field equations
-- a specific microscopic ontology
-- modifications of quantum mechanics
-
-All results are derived at the level of **effective operators, symmetry constraints,
-and bounded relaxation dynamics**.
-
-## Keywords
-
-Emergent spacetime, Born–Infeld structure, bounded propagation, relational Laplacians,
-Minkowski spacetime, Schwarzschild geometry, horizons, effective operators
-
-## Repository Contents
-```
-paper/
-├── pdf/ # Compiled paper PDF
-├── tex/ # LaTeX sources
-└── README.md
-```
+- The continuum limit of relational Laplacians is delegated, as a conditional input, to the
+  spectral reconstruction paper (paper A).
+- The non-injectivity analysis and projection entropy reading are developed in the Bell
+  paper (paper B).
+- The external dynamical input required for the Schwarzschild closure is supplied,
+  conditionally, by the spectral gravity papers (Gravity, Thermodynamics).
 
 ## Links
 
-- 📄 Paper PDF: https://github.com/Cosmochrony/born-infeld-paper
-- 🌐 Website: https://cosmochrony.org
+- 🌐 Web page: https://cosmochrony.org/science/spectral-gravity/born-infeld/
+- 📄 Zenodo concept DOI: https://doi.org/10.5281/zenodo.18407505
 - 💻 GitHub organization: https://github.com/Cosmochrony
 
 ## Citation
 
-If you reference this work, please cite:
-
-> J. Beau, *Bounded Relaxation and the Dynamical Selection of Spacetime Geometry*, 2026.
-
-(Replace with DOI / venue when available.)
+> J. Beau, *Bounded Relational Capacity and Its Conditional Continuum Dynamics*, Zenodo, 2026.
+> DOI: [10.5281/zenodo.18407505](https://doi.org/10.5281/zenodo.18407505)
 
 ## Acknowledgements
 
 Portions of the editorial refinement benefited from iterative interactions with large
-language models. These tools were used as analytical assistants for exploring alternative
-formulations, checking internal consistency, and improving clarity. All claims and final
-formulations remain the sole responsibility of the author.
+language models, used as analytical assistants for exploring alternative formulations,
+checking internal consistency, and improving clarity. All claims and final formulations
+remain the sole responsibility of the author.
 
 ## Contributions
 
 This repository is intended as a research reference.
-
 Critical feedback, independent analyses, and formal scrutiny are welcome. Please open an
 issue to discuss conceptual points, technical details, or possible extensions.
