@@ -7,7 +7,7 @@ set -e  # Exit on error
 
 # Configuration
 TEX_FILE="tex/BornInfeld.tex"
-OUTPUT_DIR="pdf"
+OUTPUT_DIR="out"
 MAIN_NAME="BornInfeld"
 
 # Colors for output
